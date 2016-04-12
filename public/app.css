@@ -1,0 +1,40 @@
+/*
+*
+* http://thenewcode.com/766/Create-A-Simple-FullScreen-Image-Gallery-Slideshow-With-JS-amp-CSS
+*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+@keyframes fadey {
+    0% { opacity: 0; }
+    15% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { opacity: 0; }
+}
+figure#slideshow {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+figure#slideshow img {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+figure#slideshow img:first-child {
+    position: relative;
+}
+
+#fullscreen-trigger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}

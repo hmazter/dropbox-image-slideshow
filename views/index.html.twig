@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hillsong Foaje Screens</title>
+
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+
+</head>
+<body>
+<div id="slideshow-container">
+    <figure id="slideshow">
+        {% for image in images %}
+            <img src="{{ image }}" alt>
+        {% endfor %}
+    </figure>
+    <button id="fullscreen-trigger" onclick="fullScreen(document.getElementById('slideshow'))">
+        Fullscreen
+    </button>
+</div>
+</body>
+</html>

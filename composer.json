@@ -1,0 +1,22 @@
+{
+  "name": "hmazter/dropbox-image-slideshow",
+  "description": "Web application to show images from a Dropbox folder as a slideshow",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kristoffer Högberg",
+      "email": "krihog@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "require": {
+    "vlucas/phpdotenv": "2.1.x-dev",
+    "guzzlehttp/guzzle": "6.2.0",
+    "twig/twig": "~1.0"
+  }
+}
